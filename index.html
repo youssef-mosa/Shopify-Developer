@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl" data-palette="violet">
+<html lang="ar" dir="rtl" data-palette="shopify">
 
 <head>
   <meta charset="utf-8">
@@ -8,14 +8,14 @@
   <meta name="description"
     content="يوسف موسى — Shopify Developer متخصص في بناء وتخصيص متاجر Shopify: تخصيص الثيم و Liquid، صفحات المنتجات، تجربة الموبايل، الأداء والتكاملات. خلفية Full-Stack في تطوير الويب.">
   <meta name="author" content="Youssef Mosa">
-  <meta name="theme-color" content="#06070f">
+  <meta name="theme-color" content="#06100a">
   <meta property="og:type" content="website">
   <meta property="og:title" content="يوسف موسى | Shopify Developer">
   <meta property="og:description" content="متخصص في بناء وتخصيص متاجر Shopify — تصميم، تخصيص، أداء، وتجربة شراء سلسة.">
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:image" content="assets/thuraya.jpg">
   <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='12' fill='url(%23g)'/%3E%3Ctext x='20' y='27' font-family='Helvetica,Arial' font-size='17' font-weight='bold' fill='%2306070f' text-anchor='middle'%3EYM%3C/text%3E%3C/svg%3E">
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2395bf47'/%3E%3Cstop offset='1' stop-color='%237ed957'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='12' fill='url(%23g)'/%3E%3Ctext x='20' y='27' font-family='Helvetica,Arial' font-size='17' font-weight='bold' fill='%2308140a' text-anchor='middle'%3EYM%3C/text%3E%3C/svg%3E">
   <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -39,23 +39,23 @@
   <style>
     /* ================= design tokens ================= */
     :root {
-      --bg: #06070f;
-      --bg-soft: #0a0c1c;
-      --deep: #04050c;
-      --surface: #101229;
-      --surface-2: #151836;
-      --line: rgba(255, 255, 255, .09);
-      --line-2: rgba(255, 255, 255, .18);
-      --tx: #eef0ff;
-      --tx-2: #a7adcf;
-      --tx-3: #787ea6;
-      --accent: #7c6cff;
-      --accent-2: #a494ff;
-      --accent-3: #22d3ee;
-      --accent-soft: rgba(124, 108, 255, .14);
-      --accent-line: rgba(124, 108, 255, .34);
-      --grad: linear-gradient(115deg, #7c6cff 0%, #22d3ee 100%);
-      --on-accent: #07091a;
+      --bg: #06100a;
+      --bg-soft: #08170f;
+      --deep: #040a06;
+      --surface: #0f1d14;
+      --surface-2: #14281b;
+      --line: rgba(255, 255, 255, .085);
+      --line-2: rgba(255, 255, 255, .17);
+      --tx: #eff4ea;
+      --tx-2: #a9b8a3;
+      --tx-3: #7c8b77;
+      --accent: #95bf47;
+      --accent-2: #7ed957;
+      --accent-3: #5e8e3e;
+      --accent-soft: rgba(149, 191, 71, .15);
+      --accent-line: rgba(149, 191, 71, .36);
+      --grad: linear-gradient(115deg, #95bf47 0%, #7ed957 100%);
+      --on-accent: #08140a;
       --wa: #25d366;
       --radius: 18px;
       --radius-lg: 26px;
@@ -65,15 +65,15 @@
       --headh: 74px;
     }
 
-    /* palette presets — switch with  <html data-palette="violet|shopify|sky|dark-green">  (violet = default) */
-    html[data-palette="shopify"] {
-      --accent: #95bf47;
-      --accent-2: #c8e86b;
-      --accent-3: #5e8e3e;
-      --accent-soft: rgba(149, 191, 71, .15);
-      --accent-line: rgba(149, 191, 71, .36);
-      --grad: linear-gradient(115deg, #95bf47 0%, #c8e86b 100%);
-      --on-accent: #0a1405
+    /* palette presets — switch with  <html data-palette="shopify|violet|sky|dark-green">  (shopify green = default) */
+    html[data-palette="violet"] {
+      --accent: #7c6cff;
+      --accent-2: #a494ff;
+      --accent-3: #22d3ee;
+      --accent-soft: rgba(124, 108, 255, .14);
+      --accent-line: rgba(124, 108, 255, .34);
+      --grad: linear-gradient(115deg, #7c6cff 0%, #22d3ee 100%);
+      --on-accent: #07091a
     }
 
     html[data-palette="sky"] {
@@ -87,13 +87,13 @@
     }
 
     html[data-palette="dark-green"] {
-      --accent: #5e8e3e;
+      --accent: #8ab73f;
       --accent-2: #95bf47;
-      --accent-3: #3f6b2a;
-      --accent-soft: rgba(94, 142, 62, .16);
-      --accent-line: rgba(94, 142, 62, .4);
-      --grad: linear-gradient(115deg, #5e8e3e 0%, #95bf47 100%);
-      --on-accent: #f2f8ec
+      --accent-3: #4e7a33;
+      --accent-soft: rgba(138, 183, 63, .15);
+      --accent-line: rgba(138, 183, 63, .36);
+      --grad: linear-gradient(115deg, #8ab73f 0%, #95bf47 100%);
+      --on-accent: #08140a
     }
 
     *,
@@ -138,7 +138,7 @@
         radial-gradient(72% 22% at 8% 46%, color-mix(in srgb, var(--accent-3) 40%, transparent), transparent 66%),
         radial-gradient(66% 22% at 86% 66%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 68%),
         radial-gradient(80% 26% at 50% 96%, color-mix(in srgb, var(--accent) 24%, transparent), transparent 68%),
-        linear-gradient(180deg, #06070f 0%, #0a0c1c 26%, #070913 58%, #04050c 100%);
+        linear-gradient(180deg, #06100a 0%, #08180f 26%, #06110b 58%, #040a06 100%);
       opacity: 1
     }
 
@@ -199,7 +199,7 @@
 
     ::selection {
       background: var(--accent);
-      color: #fff
+      color: #08140a
     }
 
     :focus-visible {
@@ -247,7 +247,7 @@
 
     /* glass band for alternating sections */
     section.alt {
-      background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 7%, transparent), transparent 68%), rgba(9, 11, 26, .62);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 7%, transparent), transparent 68%), rgba(6, 14, 9, .62);
       border-block: 1px solid var(--line)
     }
 
@@ -406,7 +406,7 @@
     /* ================= skills band ================= */
     .band {
       border-block: 1px solid var(--line);
-      background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 6%, transparent), transparent), rgba(9, 11, 26, .6);
+      background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 6%, transparent), transparent), rgba(6, 14, 9, .6);
       overflow: hidden;
       padding: 18px 0;
       position: relative;
@@ -466,7 +466,7 @@
       position: sticky;
       top: 0;
       z-index: 55;
-      background: rgba(7, 8, 20, .74);
+      background: rgba(5, 12, 8, .78);
       backdrop-filter: blur(18px) saturate(150%);
       -webkit-backdrop-filter: blur(18px) saturate(150%);
       border-bottom: 1px solid var(--line)
@@ -623,7 +623,7 @@
       inset-inline: 0;
       top: 66px;
       z-index: 54;
-      background: rgba(9, 10, 24, .985);
+      background: rgba(6, 15, 10, .985);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--line);
@@ -680,7 +680,7 @@
     .nav-scrim {
       position: fixed;
       inset: 0;
-      background: rgba(3, 4, 10, .68);
+      background: rgba(2, 7, 4, .7);
       -webkit-backdrop-filter: blur(4px);
       backdrop-filter: blur(4px);
       opacity: 0;
@@ -826,7 +826,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(6, 7, 15, 0) 52%, rgba(6, 7, 15, .7));
+      background: linear-gradient(180deg, rgba(5, 12, 8, 0) 52%, rgba(5, 12, 8, .72));
       pointer-events: none
     }
 
@@ -877,7 +877,7 @@
     }
 
     .card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, .045), transparent 34%), linear-gradient(180deg, var(--surface), #0d0f24);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .045), transparent 34%), linear-gradient(180deg, var(--surface), #0b1710);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       overflow: hidden;
@@ -898,7 +898,7 @@
       display: block;
       aspect-ratio: 16/9.4;
       overflow: hidden;
-      background: #080a18;
+      background: #060f0a;
       border-bottom: 1px solid var(--line)
     }
 
@@ -919,7 +919,7 @@
       inset: 0;
       display: grid;
       place-items: center;
-      background: rgba(6, 7, 15, .62);
+      background: rgba(5, 12, 8, .64);
       opacity: 0;
       transition: opacity .3s;
       font-weight: 700;
@@ -1019,7 +1019,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       padding: 20px 18px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .045), transparent 36%), linear-gradient(180deg, var(--surface), #0d0f24);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .045), transparent 36%), linear-gradient(180deg, var(--surface), #0b1710);
       box-shadow: 0 22px 50px -40px rgba(0, 0, 0, .9), inset 0 1px 0 rgba(255, 255, 255, .05);
       transition: border-color .25s, transform .25s, box-shadow .25s
     }
@@ -1085,7 +1085,7 @@
       grid-template-columns: 1.25fr auto;
       gap: clamp(18px, 3vw, 36px);
       align-items: center;
-      background: linear-gradient(140deg, var(--accent-soft), transparent 58%), linear-gradient(180deg, rgba(255, 255, 255, .05), transparent 36%), linear-gradient(180deg, var(--surface), #0d0f24);
+      background: linear-gradient(140deg, var(--accent-soft), transparent 58%), linear-gradient(180deg, rgba(255, 255, 255, .05), transparent 36%), linear-gradient(180deg, var(--surface), #0b1710);
       box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, .06)
     }
 
@@ -1268,7 +1268,7 @@
       margin-top: 22px;
       font-size: 13.6px;
       color: var(--tx-2);
-      background: linear-gradient(140deg, var(--accent-soft), transparent 60%), rgba(9, 11, 26, .5);
+      background: linear-gradient(140deg, var(--accent-soft), transparent 60%), rgba(6, 14, 9, .5);
       border-color: var(--accent-line)
     }
 
@@ -1301,7 +1301,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       padding: 22px 20px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .05), transparent 40%), linear-gradient(180deg, var(--surface), #0d0f24);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .05), transparent 40%), linear-gradient(180deg, var(--surface), #0b1710);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05)
     }
 
@@ -1357,7 +1357,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius-lg);
       padding: 24px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, .05), transparent 36%), linear-gradient(180deg, var(--surface), #0d0f24);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .05), transparent 36%), linear-gradient(180deg, var(--surface), #0b1710);
       box-shadow: var(--shadow)
     }
 
@@ -1443,7 +1443,7 @@
 
     /* ================= contact ================= */
     .contact-card {
-      background: linear-gradient(150deg, color-mix(in srgb, var(--accent) 20%, transparent), transparent 58%), linear-gradient(180deg, var(--surface), #0d0f24);
+      background: linear-gradient(150deg, color-mix(in srgb, var(--accent) 20%, transparent), transparent 58%), linear-gradient(180deg, var(--surface), #0b1710);
       border: 1px solid var(--accent-line);
       border-radius: var(--radius-lg);
       padding: clamp(28px, 4vw, 52px);
@@ -1489,7 +1489,7 @@
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 16px 18px;
-      background: rgba(6, 8, 20, .6);
+      background: rgba(4, 11, 7, .62);
       transition: border-color .25s, transform .25s, box-shadow .25s;
       display: block
     }
@@ -1558,7 +1558,7 @@
     .site-foot {
       border-top: 1px solid var(--line);
       padding: 32px 0;
-      background: rgba(8, 10, 22, .7);
+      background: rgba(5, 13, 9, .72);
       position: relative;
       z-index: 1
     }
@@ -1728,7 +1728,7 @@
       display: flex;
       align-items: center;
       gap: 9px;
-      background: rgba(10, 12, 26, .96);
+      background: rgba(8, 20, 12, .96);
       border: 1px solid var(--accent-line);
       color: var(--tx);
       padding: 11px 18px;
@@ -1895,11 +1895,11 @@
         top: 0;
         height: 110px;
         z-index: 2;
-        background: linear-gradient(180deg, rgba(6, 7, 15, .92), rgba(6, 7, 15, 0))
+        background: linear-gradient(180deg, rgba(5, 12, 8, .93), rgba(5, 12, 8, 0))
       }
 
       .hero-photo .photo::after {
-        background: linear-gradient(180deg, rgba(6, 7, 15, 0) 44%, rgba(6, 7, 15, .62) 76%, var(--bg) 100%)
+        background: linear-gradient(180deg, rgba(5, 12, 8, 0) 44%, rgba(5, 12, 8, .64) 76%, var(--bg) 100%)
       }
 
       .hero-photo img {
@@ -2026,7 +2026,7 @@
         bottom: 0;
         z-index: 62;
         padding: 10px calc(var(--gut) + env(safe-area-inset-left, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) calc(var(--gut) + env(safe-area-inset-right, 0px));
-        background: rgba(6, 7, 15, .92);
+        background: rgba(5, 12, 8, .93);
         -webkit-backdrop-filter: blur(18px) saturate(150%);
         backdrop-filter: blur(18px) saturate(150%);
         border-top: 1px solid var(--line);
@@ -2536,12 +2536,12 @@
         <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
           <defs>
             <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#7c6cff" />
-              <stop offset="1" stop-color="#22d3ee" />
+              <stop offset="0" stop-color="#95bf47" />
+              <stop offset="1" stop-color="#7ed957" />
             </linearGradient>
           </defs>
           <rect width="40" height="40" rx="12" fill="url(#mg)" />
-          <text x="20" y="27" font-family="Helvetica,Arial" font-size="17" font-weight="bold" fill="#07091a"
+          <text x="20" y="27" font-family="Helvetica,Arial" font-size="17" font-weight="bold" fill="#08140a"
             text-anchor="middle">YM</text>
         </svg>
         <span class="brand-txt">
@@ -3326,7 +3326,7 @@
             </svg><span class="ar">كلّمني على واتساب</span><span class="en">Message me on WhatsApp</span>
           </a>
           <a class="btn btn-ghost"
-            href="/cdn-cgi/l/email-protection#0d7462787e7e686b60627e6c3c3a344d6a606c6461236e6260327e786f67686e79305e65627d646b74283f3d5e79627f68283f3d5d7f6267686e79"><span
+            href="/cdn-cgi/l/email-protection#e79e8892949482818a889486d6d0dea7808a868e8bc984888ad89492858d828493dab48f88978e819ec2d5d7b493889582c2d5d7b795888d828493"><span
               class="ar">ابعت إيميل</span><span class="en">Send an email</span></a>
         </div>
 
@@ -3335,10 +3335,10 @@
             <i>WhatsApp</i>
             <b>+20 106 764 4849</b>
           </a>
-          <a class="cline " href="/cdn-cgi/l/email-protection#344d5b4147475152595b475505030d745359555d581a575b59">
+          <a class="cline " href="/cdn-cgi/l/email-protection#4c3523393f3f292a21233f2d7d7b750c2b212d2520622f2321">
             <i>Email</i>
             <b><span class="__cf_email__"
-                data-cfemail="4930263c3a3a2c2f24263a28787e70092e24282025672a2624">[email&#160;protected]</span></b>
+                data-cfemail="f980968c8a8a9c9f94968a98c8cec0b99e94989095d79a9694">[email&#160;protected]</span></b>
           </a>
           <a class="cline " href="https://github.com/youssef-mosa" target="_blank" rel="noopener">
             <i>GitHub</i>
@@ -3380,9 +3380,9 @@
       <span>© <span id="yr">2026</span> Youssef Mosa — <span class="ar">Shopify Developer</span><span class="en">Shopify
           Developer</span></span>
       <span style="display:flex;gap:14px 18px;flex-wrap:wrap;align-items:center">
-        <a href="/cdn-cgi/l/email-protection#720b1d07010117141f1d011343454b32151f131b1e5c111d1f"
+        <a href="/cdn-cgi/l/email-protection#f881978d8b8b9d9e95978b99c9cfc1b89f95999194d69b9795"
           style="direction:ltr;word-break:break-word"><span class="__cf_email__"
-            data-cfemail="f980968c8a8a9c9f94968a98c8cec0b99e94989095d79a9694">[email&#160;protected]</span></a>
+            data-cfemail="245d4b5157574142494b574515131d644349454d480a474b49">[email&#160;protected]</span></a>
         <a href="https://wa.me/201067644849" target="_blank" rel="noopener" data-wa style="direction:ltr">+20 106 764
           4849</a>
       </span>
@@ -3591,7 +3591,7 @@
       if (yr) yr.textContent = new Date().getFullYear();
     })();
   </script>
-  <script>(function () { function c() { var b = a.contentDocument || (a.contentWindow && a.contentWindow.document); if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'a4161a89dd0adf75',t:'MTc5MDQ2NTkyMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+  <script>(function () { function c() { var b = a.contentDocument || (a.contentWindow && a.contentWindow.document); if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'a4162948c80c3f1d',t:'MTc5MDQ2NjUyNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
 
 </html>
