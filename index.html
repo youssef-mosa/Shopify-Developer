@@ -2170,20 +2170,26 @@
         gap: 10px
       }
 
+      /* On phones, keep the icon in a narrow column and stack title + description.
+     A flex row here makes the title and paragraph sit side-by-side and overlap
+     in Instagram's narrow in-app browser. */
       .svc {
         border-radius: 16px;
         padding: 15px 16px;
-        display: flex;
-        gap: 13px;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 36px minmax(0, 1fr);
+        column-gap: 13px;
+        row-gap: 2px;
+        align-items: start;
         text-align: start
       }
 
       .svc .ic {
         width: 36px;
         height: 36px;
-        margin-bottom: 0;
-        flex: 0 0 auto;
+        margin: 0;
+        grid-column: 1;
+        grid-row: 1 / span 2;
         border-radius: 11px
       }
 
@@ -2192,14 +2198,21 @@
         height: 19px
       }
 
+      .svc h3,
+      .svc p {
+        grid-column: 2;
+        min-width: 0
+      }
+
       .svc h3 {
         font-size: 16px;
-        margin-bottom: 2px
+        margin: 0 0 2px
       }
 
       .svc p {
         font-size: 13.3px;
-        line-height: 1.55
+        line-height: 1.55;
+        margin: 0
       }
 
       .rd {
@@ -2562,6 +2575,27 @@
       }
     }
   </style>
+  <script>
+    /* Keep a fresh visit from Instagram at the top instead of restoring an old
+       in-app-browser scroll position. Explicit hash links (for example #services)
+       are preserved. */
+    (function () {
+      try { history.scrollRestoration = "manual"; } catch (e) { }
+      function isFreshVisit() {
+        var nav = performance && performance.getEntriesByType ? performance.getEntriesByType("navigation")[0] : null;
+        var fromInstagram = /instagram\.com/i.test(document.referrer || "");
+        return !location.hash && (!nav || nav.type === "navigate" || fromInstagram);
+      }
+      function resetScroll() {
+        if (!isFreshVisit()) return;
+        window.scrollTo(0, 0);
+        setTimeout(function () { if (!location.hash) window.scrollTo(0, 0); }, 80);
+      }
+      window.addEventListener("pageshow", resetScroll);
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", resetScroll);
+      else resetScroll();
+    })();
+  </script>
   <script>document.documentElement.classList.add("js")</script>
 </head>
 
